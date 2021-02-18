@@ -1,8 +1,8 @@
 FROM tensorflow/serving:2.4.1
 
 # Leaf the directory of the servable model
-# local Structure should be: /1/model.pb
-# container structure should be /models/1/model.pb 
+# local Structure should be: /1/saved_model.pb
+# container structure should be /models/1/saved_model.pb 
 
 
 # TODO
