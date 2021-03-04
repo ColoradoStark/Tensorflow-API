@@ -17,7 +17,7 @@ def recognize_image():
     # prepare image for prediction
     img_array = io.imread(img_url, as_gray=True)
     small_grey = transform.resize(
-        img_array, (28, 28), mode='symmetric', preserve_range=True)
+        img_array, (28, 28, 1), mode='symmetric', preserve_range=True)
     img_to_predict = np.expand_dims(small_grey / 255.0, 0)
 
     # predict
