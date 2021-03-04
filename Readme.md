@@ -1,10 +1,11 @@
 ### Basic Tensor Converting API
 
 A flask API that talks to an exported Tensorflow Model.  It will convert Images to Tensors and Tensors to Strings.
+Tested with a trained model on the Fashion MNIST dataset.  To use:
 
 1. Build the docker image
 2. Run the docker image and forward port 5000
-3. Make a post request with this JSON in the body
+3. Make a post request with a JSON body like this
 
 ```
 {
