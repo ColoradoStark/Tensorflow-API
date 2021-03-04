@@ -1,5 +1,7 @@
 ### Basic Tensor Converting API
 
+STATUS: Functioning but still needs tweaking on reshaping the tensor array
+
 A flask API that talks to an exported Tensorflow Model.  It will convert Images to Tensors for the requests, and convert Tensors to Strings for the response.
 Tested with a trained model on the Fashion MNIST dataset.  The Jupyter Notebook used to train the model is in the repository.  
 
