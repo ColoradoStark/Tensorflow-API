@@ -10,7 +10,7 @@ The source code will build a flask API that runs tensorflow, numpy, scikit and w
 
 Tested with a trained model on the Fashion MNIST dataset. The Jupyter Notebook used to train the model, and the exported trained model are in the repository.
 
-Instructions:
+### Instructions:
 
 1. Run the docker image and forward port 5000 `docker run -p 5000:5000 coloradostark/fashion:0.08`
 2. Make a post request to this URL `http://127.0.0.1:5000/api/recognize_image` with a JSON body like this
