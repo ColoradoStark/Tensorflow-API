@@ -1,6 +1,6 @@
 ### Tensorflow REST API
 
-![Version](https://img.shields.io/github/v/release/ColoradoStark/caddy-ssl-multisite)
+![Version](https://img.shields.io/github/v/release/ColoradoStark/Tensorflow-REST-API)
 
 This is a basic demo for putting a machine learning model that has been trained with a neural net into production. It addresses the basic challenge that the inputs and outputs of a tensorflow model are not human readable.
 
