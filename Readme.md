@@ -1,15 +1,15 @@
-### Basic Tensor Converting API
+### Tensorflow REST API
 
-STATUS: Functioning but still needs tweaking on reshaping the tensor array
+This is a basic demo for putting a machine learning model that has been trained with a neural net into production. It addresses the basic challenge that the inputs and outputs of a tensorflow model are not human readable.
 
-A flask API that talks to an exported Tensorflow Model.  It will convert Images to Tensors for the requests, and convert Tensors to Strings for the response.
-Tested with a trained model on the Fashion MNIST dataset.  The Jupyter Notebook used to train the model, and the exported trained model are in the repository.  
+The source code will build a flask API that runs tensorflow, numpy, scikit and will talk to a pre-trained saved Tensorflow Model. It will convert Images to Tensors for the requests, and convert Tensors to Strings for the response.
+
+Tested with a trained model on the Fashion MNIST dataset. The Jupyter Notebook used to train the model, and the exported trained model are in the repository.
 
 Instructions:
 
-1. Build the docker image  ```docker build -t fashion:0.02 . --no-cache```
-2. Run the docker image and forward port 5000 ```docker run -p 5000:5000 fashion:0.02```
-3. Make a post request to this URL ```http://127.0.0.1:5000/api/recognize_image``` with a JSON body like this 
+1. Run the docker image and forward port 5000 `docker run -p 5000:5000 coloradostark/fashion:0.08`
+2. Make a post request to this URL `http://127.0.0.1:5000/api/recognize_image` with a JSON body like this
 
 ```
 {
