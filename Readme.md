@@ -6,7 +6,7 @@ This is a basic demo for putting a machine learning model that has been trained 
 
 The source code will build a flask API that runs tensorflow, numpy, scikit and will talk to a pre-trained saved Tensorflow Model. It will convert Images to Tensors for the requests, and convert Tensors to Strings for the response.  So instead of sending and receiving N-Dimensional arrays with thousands of numbers you can just make requests that look like this:
 
-![Screenshot](https://github.com/ColoradoStark/Tensorflow-REST-API/raw/main/API.png)
+![Screenshot](https://raw.githubusercontent.com/ColoradoStark/Tensorflow-REST-API/master/API.png)
 
 Tested with a trained model on the Fashion MNIST dataset. The Jupyter Notebook used to train the model, and the exported trained model are in the repository.
 
